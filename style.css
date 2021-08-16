@@ -1,0 +1,31 @@
+/* ===== Fuente ===== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* ===== Variables ===== */
+:root {
+	/* Colores primarios */
+	--dark-cyan: rgb(0, 67, 67);
+	--medium-cyan: rgb(0, 97, 97);
+	--light-cyan: rgb(0, 152, 152);
+	--very-light-cyan: rgb(0, 227, 227);
+
+	/* Colores neutrales */
+	--very-dark-blue: hsl(234, 12%, 34%);
+	--grayish-blue: hsl(229, 6%, 66%);
+	--very-light-gray: hsl(0, 0%, 98%);
+
+	/* Tipografía */
+	--font-family: 'Lato', sans-serif;
+}
+
+/* ===== Estilos generales ===== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: var(--font-family);
+}
