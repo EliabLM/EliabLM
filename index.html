@@ -7,18 +7,39 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cd5a00354b.js" crossorigin="anonymous"></script>
     <title>Eliab López</title>
 </head>
 <body>
 
-    <header>
-        <nav>
+    <header id="inicio">
+        <nav class="stroke">
+            <!-- Nav header -->
+            <div class="nav-header">
+                <a class="logo" href="#inicio">Eliab López</a>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Links -->
+            <ul class="links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">contacto</a></li>
+            </ul>
+
+            <!-- Contacto -->
+            <a class="contact" href="mailto:eliablopez@hotmail.com" rel="noopener"><button class="btn-contact" type="button">eliablopez@hotmail.com <span class="mail"><i class="fas fa-envelope-square"></i></span></button></a>
 
         </nav>
-        <section class="hero-section">
+        <!-- <section class="hero-section">
             <h1>Eliab López</h1>
-        </section>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, quod ratione corporis soluta cumque amet quae quas eaque nihil repellendus?</p>
+        </section> -->
     </header>
     
+    <script src="./script.js"></script>
 </body>
 </html>
