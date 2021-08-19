@@ -288,22 +288,6 @@ nav {
 	background: transparent;
 }
 
-/* Content */
-.content {
-	/* outline: 1px solid; */
-	width: 100%;
-	padding: 0 15%;
-	background: var(--white);
-}
-
-.content p {
-	margin-top: 25px;
-	text-align: justify;
-	font-size: 18px;
-	font-weight: 400;
-	color: var(--grayish-blue);
-}
-
 /* Media queries */
 @media screen and (min-width: 768px) {
 	.hero-section {
@@ -345,4 +329,20 @@ nav {
 		font-size: 4rem;
 		margin-left: 10px;
 	}
+}
+
+/* Content */
+.content {
+	/* outline: 1px solid; */
+	width: 100%;
+	padding: 0 15%;
+	background: var(--white);
+}
+
+.content p {
+	margin-top: 25px;
+	text-align: justify;
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--grayish-blue);
 }
