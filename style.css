@@ -360,15 +360,47 @@ nav {
 	color: var(--medium-cyan);
 }
 
-.sobre-mi strong {
-	color: var(--dark-cyan);
-}
-
 .sobre-mi p {
 	width: 100%;
 	padding: 15px 0;
 	font-weight: 300;
+	font-size: calc(1.6rem + 0.5vw);
 	color: var(--very-dark-cyan);
+}
+
+.sobre-mi strong {
+	color: var(--dark-cyan);
+}
+
+/* Media queries */
+@media screen and (min-width: 1090px) {
+	.sobre-mi {
+		padding: 60px 0;
+	}
+
+	.sobre-mi__contenido {
+		/* outline: 1px solid; */
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding: 0px 15%;
+	}
+
+	.sobre-mi h3 {
+		width: 50%;
+		padding-right: 10px;
+		text-align: left;
+	}
+
+	.sobre-mi__parrafos {
+		width: 50%;
+		padding-left: 25px;
+		border-left: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.sobre-mi p {
+		font-size: calc(1.6rem + 0.2vw);
+	}
 }
 
 /* Parrafos de relleno */
