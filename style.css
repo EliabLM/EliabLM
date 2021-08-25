@@ -435,10 +435,76 @@ nav {
 
 .box {
 	/* outline: 1px solid white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-width: 375px;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+	transition: var(--transition);
+	cursor: pointer;
+	background: var(--white); /*temporal*/
+}
+
+.box:hover {
+	background: var(--background);
+}
+
+.box img {
+	display: none;
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-	background: white; /*temporal*/
+	transition: var(--transition);
+}
+
+.info h3 {
+	text-align: center;
+	padding: 20px;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+/* .info {
+	display: none;
+} */
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.modal-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding: 5px 20px;
+	/* margin-left: 15px; */
+	border: 1px solid var(--white);
+	border-radius: 50px;
+	font-family: var(--font-family);
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--dark-cyan);
+	background-color: var(--white);
+}
+
+.modal-btn:hover {
+	border: 1px solid var(--white);
+	background: linear-gradient(
+		to right,
+		var(--dark-cyan),
+		var(--medium-cyan),
+		var(--very-dark-cyan)
+	);
+	color: var(--white);
 }
 
 /* Parrafos de relleno */
