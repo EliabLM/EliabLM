@@ -333,9 +333,10 @@ nav {
 }
 
 /* ==================== Main ==================== */
-/* Sobre mi */
+/* ===== Sobre mi ===== */
 .sobre-mi {
 	margin-top: 60px;
+	margin-bottom: 60px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 60px 10%;
 }
@@ -401,6 +402,43 @@ nav {
 	.sobre-mi p {
 		font-size: calc(1.6rem + 0.2vw);
 	}
+}
+
+/* ========== Proyectos ========== */
+.proyectos {
+	background: var(--background);
+	border-top-left-radius: 50% 65px;
+	border-top-right-radius: 50% 65px;
+	padding-bottom: 60px;
+}
+
+.proyectos h2 {
+	padding: 50px 0px 30px 0px;
+	text-align: center;
+	font-weight: 700;
+	font-size: calc(2.52rem + 3.9vw);
+	text-transform: capitalize;
+	color: var(--white);
+}
+
+.proyectos-contenido {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(150px, auto);
+	padding: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	border: 2px solid var(--white);
+	border-radius: 10px;
+}
+
+.box {
+	/* outline: 1px solid white; */
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: white; /*temporal*/
 }
 
 /* Parrafos de relleno */
