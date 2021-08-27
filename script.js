@@ -17,3 +17,16 @@ window.onscroll = function () {
 		navbar.classList.remove('sticky');
 	}
 };
+
+// Proyecto hover
+const boxes = document.querySelectorAll('.box');
+const infos = document.querySelectorAll('.info');
+
+// console.log(infos);
+
+boxes.forEach(function (box) {
+	box.addEventListener('mouseover', function (element) {
+		const info = element.target.querySelector('.info');
+		console.log(info);
+	});
+});
