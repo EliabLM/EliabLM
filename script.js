@@ -18,15 +18,40 @@ window.onscroll = function () {
 	}
 };
 
-// Proyecto hover
-const boxes = document.querySelectorAll('.box');
-const infos = document.querySelectorAll('.info');
+// Modal
+const btnTip = document.getElementById('btn-tip-calculator');
+const modalTip = document.getElementById('modal-tip-calculator');
+const btnPractico = document.getElementById('btn-practico-javascript');
+const modalPractico = document.getElementById('modal-practico-javascript');
+const btnQuote = document.getElementById('btn-quote-generator');
+const modalQuote = document.getElementById('modal-quote-generator');
+const btnPortfolio = document.getElementById('btn-portfolio');
+const modalPortfolio = document.getElementById('modal-portfolio');
 
-// console.log(infos);
+abrirYCerrarModal(btnTip, modalTip);
+abrirYCerrarModal(btnPractico, modalPractico);
+abrirYCerrarModal(btnQuote, modalQuote);
+abrirYCerrarModal(btnPortfolio, modalPortfolio);
 
-boxes.forEach(function (box) {
-	box.addEventListener('mouseover', function (element) {
-		const info = element.target.querySelector('.info');
-		console.log(info);
+function abrirYCerrarModal(btn, modal) {
+	// Abrir
+	btn.addEventListener('click', function () {
+		modal.classList.add('open-modal');
 	});
-});
+
+	// Cerrar
+	const btnClose = document.querySelectorAll('.btn-close');
+	btnClose.forEach(function (btn) {
+		btn.addEventListener('click', function () {
+			modal.classList.remove('open-modal');
+		});
+	});
+}
+
+`Cerrar modal cuando de click fuera del cuadro`;
+// window.addEventListener('mouseup', function (event) {
+// 	if (event.target != modalContent && event.target.parentNode != modalContent) {
+// 		console.log(event.target);
+// 		modalTip.classList.remove('open-modal');
+// 	}
+// });

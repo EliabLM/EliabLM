@@ -31,7 +31,7 @@
             </ul>
 
             <!-- Contacto -->
-            <a class="contact" href="mailto:eliablopez@hotmail.com" rel="noopener"><button class="btn-contact" type="button">eliablopez@hotmail.com <span class="mail"><i class="fas fa-envelope-square"></i></span></button></a>
+            <a class="contact" href="mailto:eliablopez@hotmail.com" rel="noopener" target="_blank"><button class="btn-contact" type="button">eliablopez@hotmail.com <span class="mail"><i class="fas fa-envelope-square"></i></span></button></a>
             
         </nav>
         
@@ -41,7 +41,7 @@
                 <h1>Hola, Soy Eliab</h1>
                 <p>Desarrollador Web profesional ubicado en Cartagena, Colombia.</p>
                 <p>Con experiencia en desarrollo de aplicaciones Web utilizando el stack MERN de JavaScript.</p>
-                <a class="contact" href="mailto:eliablopez@hotmail.com"><button class="btn-contact" type="button">Contáctame<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                <a class="contact" href="mailto:eliablopez@hotmail.com" target="_blank"><button class="btn-contact" type="button">Contáctame<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
             </div>
             <img class="img-hero" src="./images/undraw_developer_activity_bv832.svg" alt="Desarrollador">
         </section>
@@ -84,7 +84,7 @@
                     <img class="img-display" src="./images/eliablm.github.io_tip-calculator-app-main_src_index.html.png" alt="Proyecto calculadora">
                     <div class="info">
                         <h3>Tip Calculator App</h3>
-                        <button class="btn modal-btn">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
+                        <button class="btn modal-btn" id="btn-tip-calculator">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
                     </div>
                 </div>
                 
@@ -93,7 +93,7 @@
                     <img class="img-display" src="./images/eliablm.github.io_practico-javascript_.png" alt="Taller práctico">
                     <div class="info">
                         <h3>Taller Práctico de JavaScript</h3>
-                        <button class="btn modal-btn">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
+                        <button class="btn modal-btn" id="btn-practico-javascript">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
                     </div>
                 </div>
                 
@@ -102,7 +102,7 @@
                     <img class="img-display" src="./images/eliablm.github.io_quote-generator_.png" alt="Quote generator">
                     <div class="info">
                         <h3>Quote Generator</h3>
-                        <button class="btn modal-btn">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
+                        <button class="btn modal-btn" id="btn-quote-generator">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
                     </div>
                 </div>
 
@@ -111,12 +111,97 @@
                     <img class="img-display" src="./images/eliablm.github.io_EliabLM_ (1).png" alt="Portfolio">
                     <div class="info">
                         <h3>Portfolio</h3>
-                        <button class="btn modal-btn">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
+                        <button class="btn modal-btn" id="btn-portfolio">Más info<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- modal -->
+        <div class="modal">
+            <!-- Modal tip calculator -->
+            <div class="modal-overlay" id="modal-tip-calculator">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Más información</h3>
+                        <button class="btn-close">&times;</button>
+                    </div>
+                    <div class="modal-info">
+                        <h4>Tecnologías</h4>
+                        <h5>HTML | CSS | JavaScript</h5>
+                        <p>Aplicación Web para calcular propinas tomando como entrada la cuenta, el porcentaje y el número de personas.</p>
+                        <div class="btns">
+                            <a href="https://eliablm.github.io/tip-calculator-app-main/src/index.html" target="_blank"><button class="btn modal-btn">Live Demo<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                            <a href="https://github.com/EliabLM/tip-calculator-app-main" target="_blank"><button class="btn modal-btn">GitHub Repo<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                        </div>
+                    </div>
+                    <button class="btn-close">Cerrar</button>
+                </div>
+            </div>
+
+            <!-- Modal JavaScript práctico -->
+            <div class="modal-overlay" id="modal-practico-javascript">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Más información</h3>
+                        <button class="btn-close">&times;</button>
+                    </div>
+                    <div class="modal-info">
+                        <h4>Tecnologías</h4>
+                        <h5>HTML | CSS | JavaScript</h5>
+                        <p>Proyecto del curso práctico de JavaScript de PLATZI, cuenta con 4 talleres: calculadora para figuras geométricas, calculadora para aplicar descuentos en tiendas, medidas de tendencia central y top 10 de una lista de salarios. </p>
+                        <div class="btns">
+                            <a href="https://eliablm.github.io/practico-javascript/index.html" target="_blank"><button class="btn modal-btn">Live Demo<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                            <a href="https://github.com/EliabLM/practico-javascript" target="_blank"><button class="btn modal-btn">GitHub Repo<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                        </div>
+                    </div>
+                    <button class="btn-close">Cerrar</button>
+                </div>
+            </div>
+
+            <!-- Modal Quote generator -->
+            <div class="modal-overlay" id="modal-quote-generator">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Más información</h3>
+                        <button class="btn-close">&times;</button>
+                    </div>
+                    <div class="modal-info">
+                        <h4>Tecnologías</h4>
+                        <h5>HTML | CSS | JavaScript</h5>
+                        <p>Random quote generator desarrollado utilizando asynchronous fetch request. </p>
+                        <div class="btns">
+                            <a href="https://eliablm.github.io/quote-generator/" target="_blank"><button class="btn modal-btn">Live Demo<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                            <a href="https://github.com/EliabLM/quote-generator" target="_blank"><button class="btn modal-btn">GitHub Repo<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                        </div>
+                    </div>
+                    <button class="btn-close">Cerrar</button>
+                </div>
+            </div>
+
+            <!-- Modal Portfolio -->
+            <div class="modal-overlay" id="modal-portfolio">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Más información</h3>
+                        <button class="btn-close">&times;</button>
+                    </div>
+                    <div class="modal-info">
+                        <h4>Tecnologías</h4>
+                        <h5>HTML | CSS | JavaScript</h5>
+                        <p>Este sitio Web está desarrollado desde cero y actualizado continuamente agregando nuevos proyectos. </p>
+                        <div class="btns">
+                            <a href="#"><button class="btn modal-btn">This Website<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                            <a href="https://github.com/EliabLM/EliabLM" target="_blank"><button class="btn modal-btn">GitHub Repo<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></button></a>
+                        </div>
+                    </div>
+                    <button class="btn-close">Cerrar</button>
+                </div>
+            </div>
+
+
+        </div>
+        
         <div class="parrafos">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus similique quaerat magnam repellendus, quisquam sint ipsam nihil facilis! Sunt laudantium dolorum in labore facere quia reiciendis repellat accusantium, illum eum, culpa, nemo non nobis omnis numquam. Repudiandae facilis iste mollitia inventore enim quod minima suscipit, voluptas nesciunt dolore. Enim ipsum obcaecati architecto maiores recusandae repudiandae iure optio est id, tempora minus, cumque laudantium aperiam molestiae sed. Reprehenderit non eius, exercitationem corporis quas neque, in dolor excepturi dicta quod vero sunt, magni distinctio adipisci voluptatum nostrum. Repellat earum assumenda aliquid fugit deserunt sint consectetur ad alias, unde mollitia, asperiores doloribus expedita vero labore fuga quisquam possimus ab reiciendis illum rem enim tenetur ex soluta animi? Sint eum eaque illum optio quia officia ut doloremque! Voluptatibus ipsa velit quos quidem culpa, veniam est non distinctio soluta ratione laboriosam beatae delectus quis mollitia ducimus, numquam earum aut molestias sequi suscipit enim blanditiis?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus similique quaerat magnam repellendus, quisquam sint ipsam nihil facilis! Sunt laudantium dolorum in labore facere quia reiciendis repellat accusantium, illum eum, culpa, nemo non nobis omnis numquam. Repudiandae facilis iste mollitia inventore enim quod minima suscipit, voluptas nesciunt dolore. Enim ipsum obcaecati architecto maiores recusandae repudiandae iure optio est id, tempora minus, cumque laudantium aperiam molestiae sed. Reprehenderit non eius, exercitationem corporis quas neque, in dolor excepturi dicta quod vero sunt, magni distinctio adipisci voluptatum nostrum. Repellat earum assumenda aliquid fugit deserunt sint consectetur ad alias, unde mollitia, asperiores doloribus expedita vero labore fuga quisquam possimus ab reiciendis illum rem enim tenetur ex soluta animi? Sint eum eaque illum optio quia officia ut doloremque! Voluptatibus ipsa velit quos quidem culpa, veniam est non distinctio soluta ratione laboriosam beatae delectus quis mollitia ducimus, numquam earum aut molestias sequi suscipit enim blanditiis?</p>
