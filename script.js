@@ -23,11 +23,15 @@ const btnTip = document.getElementById('btn-tip-calculator');
 const modalTip = document.getElementById('modal-tip-calculator');
 const btnPractico = document.getElementById('btn-practico-javascript');
 const modalPractico = document.getElementById('modal-practico-javascript');
-
-const btnClose = document.querySelectorAll('.btn-close');
+const btnQuote = document.getElementById('btn-quote-generator');
+const modalQuote = document.getElementById('modal-quote-generator');
+const btnPortfolio = document.getElementById('btn-portfolio');
+const modalPortfolio = document.getElementById('modal-portfolio');
 
 abrirYCerrarModal(btnTip, modalTip);
 abrirYCerrarModal(btnPractico, modalPractico);
+abrirYCerrarModal(btnQuote, modalQuote);
+abrirYCerrarModal(btnPortfolio, modalPortfolio);
 
 function abrirYCerrarModal(btn, modal) {
 	// Abrir
@@ -43,6 +47,7 @@ function abrirYCerrarModal(btn, modal) {
 		});
 	});
 }
+
 `Cerrar modal cuando de click fuera del cuadro`;
 // window.addEventListener('mouseup', function (event) {
 // 	if (event.target != modalContent && event.target.parentNode != modalContent) {

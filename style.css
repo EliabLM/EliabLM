@@ -538,6 +538,19 @@ nav {
 	border-radius: 10px;
 }
 
+@media screen and (max-width: 800px) {
+	.modal-content {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.modal-content {
+		margin: 0;
+		width: 100vw;
+	}
+}
+
 .modal-header {
 	/* outline: 1px solid; */
 	display: flex;
