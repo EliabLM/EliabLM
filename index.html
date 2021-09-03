@@ -217,21 +217,22 @@
                     <p>Escríbeme para hablar sobre mis próximos proyectos y como podemos trabajar juntos,</p>
                     <p>encantado de responderte.</p>
                 </div>
-                <form class="form" name="contact" method="POST">
+                <form class="form" id="form" name="contact">
                     <div class="nombre contact-entrada">
                         <label for="name-form">Nombre</label>
-                        <input type="text" required id="name-form" placeholder="Nombre">
+                        <input name="name" type="text" required id="name-form" placeholder="Nombre">
                     </div>
                     <div class="email contact-entrada">
                         <label for="email-form">Email</label>
-                        <input type="email" required id="email-form" placeholder="nombre@ejemplo.com">
+                        <input name="email" type="email" required id="email-form" placeholder="nombre@ejemplo.com">
                     </div>
                     <div class="mensaje contact-entrada">
                         <label for="mensaje-form">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje-form" rows="4"></textarea>
+                        <textarea name="message" id="mensaje-form" rows="4"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Enviar</button>
                 </form>
+                <a href="mailto:eliablopez@hotmail.com" id="mailto" target="_blank"></a>
             </div>
         </section>
         <!-- Formulario contacto final -->

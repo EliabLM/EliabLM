@@ -64,3 +64,19 @@ inputText.addEventListener('input', function () {
 	this.style.height = 'auto';
 	this.style.height = `${this.scrollHeight}px`;
 });
+
+// Submit del formulario
+const $form = document.getElementById('form');
+const $buttonMailto = document.getElementById('mailto');
+
+$form.addEventListener('submit', function (event) {
+	event.preventDefault();
+	const form = new FormData(this);
+	$buttonMailto.setAttribute(
+		'href',
+		`mailto:eliablopez@hotmail.com?subject=${form.get('name')} ${form.get(
+			'email'
+		)}&body=${form.get('message')}`
+	);
+	$buttonMailto.click();
+});
