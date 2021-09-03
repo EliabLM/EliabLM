@@ -55,3 +55,12 @@ function abrirYCerrarModal(btn, modal) {
 // 		modalTip.classList.remove('open-modal');
 // 	}
 // });
+
+// Resize textarea
+const inputText = document.getElementById('mensaje-form');
+inputText.style.cssText = `height: ${inputText.scrollHeight}px; overflow-y: hidden`;
+
+inputText.addEventListener('input', function () {
+	this.style.height = 'auto';
+	this.style.height = `${this.scrollHeight}px`;
+});
