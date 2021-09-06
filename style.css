@@ -785,6 +785,71 @@ textarea {
 	}
 }
 
+/* ==================== Footer ==================== */
+/* Social media */
+footer {
+	/* outline: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.social-media {
+	/* outline: 1px solid; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 15px 0px 15px 0px;
+	font-size: 3rem;
+	font-weight: 700;
+	background: rgba(0, 227, 227, 0.1);
+	color: var(--dark-cyan);
+}
+
+.social-media a {
+	text-decoration: none;
+	color: var(--dark-cyan);
+}
+
+.social-media-icons a {
+	padding: 0px 5px;
+}
+
+@media screen and (max-width: 425px) {
+	.social-media {
+		flex-direction: column;
+	}
+}
+
+/* coded by */
+.coded-by {
+	margin-top: 40px;
+	padding: 20px;
+	border-top: 2px solid var(--dark-cyan);
+	text-align: center;
+	color: var(--grayish-blue);
+}
+
+.coded-by a {
+	color: var(--dark-cyan);
+}
+
+/* final footer */
+.final-footer {
+	display: block;
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	border-top-left-radius: 50% 65px;
+	border-top-right-radius: 50% 65px;
+	background: var(--background);
+	margin-bottom: none;
+}
+
 /* =============================================================== */
 /* Parrafos de relleno */
 .parrafos {
