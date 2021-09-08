@@ -325,6 +325,56 @@ nav {
 	}
 }
 
+/* ===== MERN Stack ===== */
+.mern-stack {
+	margin-top: 60px;
+}
+
+.mern-stack-title {
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: calc(2rem + 2vw);
+	font-weight: 700;
+	color: var(--dark-cyan);
+}
+
+.mern-stack-logos {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px 15%;
+	background: rgba(0, 227, 227, 0.1);
+}
+
+.box-logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mern-stack-logos img {
+	width: 80px;
+}
+
+.mern-stack-logos p {
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--dark-cyan);
+}
+
+@media screen and (max-width: 1090px) {
+	.mern-stack-logos {
+		padding: 10px 10%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.mern-stack-logos {
+		padding: 10px 20%;
+	}
+}
+
 /* ==================== Main ==================== */
 /* ===== Sobre mi ===== */
 .sobre-mi {
