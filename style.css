@@ -355,6 +355,11 @@ nav {
 
 .mern-stack-logos img {
 	width: 80px;
+	cursor: pointer;
+}
+
+.mern-stack-logos div:hover {
+	filter: brightness(1.5);
 }
 
 .mern-stack-logos p {
@@ -371,7 +376,13 @@ nav {
 
 @media screen and (max-width: 400px) {
 	.mern-stack-logos {
-		padding: 10px 20%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px 5%;
+	}
+
+	.mern-stack-logos p {
+		text-align: center;
 	}
 }
 
@@ -678,6 +689,29 @@ nav {
 
 	.box {
 		height: 100%;
+	}
+}
+
+/* ===== skills tecnologicas ===== */
+.skills {
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1090px) {
+	.mern-stack-logos {
+		padding: 10px 10%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.mern-stack-logos {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px 5%;
+	}
+
+	.mern-stack-logos p {
+		text-align: center;
 	}
 }
 
