@@ -28,7 +28,7 @@ Here are some ideas to get you started:
 ```javascript
 const Eliab = {
   code: [Javascript, HTML, CSS, Python],
-  tools: [MongoDB, Express, React, Node, MySQL]
+  tools: [MongoDB, Express, React, React Native, Node, MySQL]
 }
 ```
 
