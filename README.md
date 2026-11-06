@@ -25,4 +25,5 @@ Estructuras de datos y algoritmos, PostgreSQL a fondo, arquitectura de software,
 ## Contacto
 [![Twitter: EliabLm](https://img.shields.io/twitter/follow/EliabLM?style=social)](https://twitter.com/EliabLM)
 [![Linkedin: thaianebraga](https://img.shields.io/badge/-eliablopez-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/eliablopez/)](https://www.linkedin.com/in/eliablopez/)
-[![GitHub Eliab](https://img.shields.io/github/followers/EliabLM?label=follow&style=social)](https://github.com/EliabLM) · eliablopez@hotmail.com
+[![GitHub Eliab](https://img.shields.io/github/followers/EliabLM?label=follow&style=social)](https://github.com/EliabLM)
+eliablopez@hotmail.com
